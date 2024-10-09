@@ -21,9 +21,7 @@ This is a simple Flask web application that allows users to choose their favorit
 
 ## Installation
 
-1. **Clone the repository**:
-   
-   git clone https://github.com/yourusername/your-repository.git
+1. **Clone the repository**
 
 2. **Install Dependencies"":
 

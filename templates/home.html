@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Choose your Favorite Bear</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'style.css')}}">
+    </head> 
+    <body>
+        <h1>Let's play choose a bear.</h1>
+
+        <p>Please select your favorite bear from the dropdown below.</p>
+
+        <form action="{{ url_for('result') }}" method="POST">
+            <select name="bear_choice">
+                <option value="Polar Bear">Polar Bear</option>
+                <option value="Koala">Koala Bear</option>
+                <option value="Panda Bear">Panda Bear</option>
+                <option value="Grizzly Bear">Grizzly Bear</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    
+        <div class="bear-images">
+            <div class="bear">
+                <img src="{{ url_for('static', filename='polar_bear.jpg') }}" alt="Polar Bear" width="200" height="200">
+                <div class="bear-name">Polar</div>
+            </div>
+            <div class="bear">
+                <img src="{{ url_for('static', filename='koala_bear.jpg') }}" alt="Koala Bear" width="200" height="200">
+                <div class="bear-name">Koala</div>
+            </div>
+            <div class="bear">
+                <img src="{{ url_for('static', filename='panda_bear.jpg') }}" alt="Panda Bear" width="200" height="200">
+                <div class="bear-name">Panda</div>
+            </div>
+            <div class="bear">
+                <img src="{{ url_for('static', filename='grizzly_bear.jpg') }}" alt="Grizzly Bear" width="200" height="200">
+                <div class="bear-name">Grizzly</div>
+            </div>
+        </div>
+    
+        <p>If you're unsure which bear to choose, please <a href="{{ url_for('about') }}">follow this link</a> for more information about bears.</p>
+            
+        </form>
+    </body>
+</html>

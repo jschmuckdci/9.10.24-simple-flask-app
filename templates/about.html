@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>About</title>
+</head>
+<body>
+    <h1>About Us (Bears)</h1>
+    <div class="bear-description">
+        <div class="bear">
+            <h2>Panda Bear</h2>
+            <img src="{{ url_for('static', filename='panda_bear.jpg') }}"alt="Panda Bear" width="200" height="200">
+            <p>The Panda bear, native to China, is famous for its striking black-and-white coat. It primarily feeds on bamboo and spends around 14 hours a day eating. Though once endangered, conservation efforts have helped improve their population.</p>
+        </div>
+    
+        <div class="bear">
+            <h2>Grizzly Bear</h2>
+            <img src="{{ url_for('static', filename='grizzly_bear.jpg') }}" alt="Grizzly Bear" width="200" height="200">
+            <p>Grizzly bears are a subspecies of brown bears found in North America. They are known for their strength and can weigh up to 800 pounds. Despite their size, Grizzlies are surprisingly fast and can run up to 30 miles per hour.</p>
+        </div>
+    
+        <div class="bear">
+            <h2>Koala (Not technically a bear!)</h2>
+            <img src="{{ url_for('static', filename='koala_bear.jpg') }}" alt="Koala Bear" width="200" height="200">
+            <p>Though often called a bear, the koala is actually a marsupial found in Australia. Koalas spend most of their time in eucalyptus trees and feed on the leaves. They are known for their sleepy nature, resting up to 20 hours a day.</p>
+        </div>
+    
+        <div class="bear">
+            <h2>Polar Bear</h2>
+            <img src="{{ url_for('static', filename='polar_bear.jpg') }}" alt="Polar Bear" width="200" height="200">
+            <p>Polar bears are the largest land carnivores, native to the Arctic Circle. They are highly adapted to cold environments and have a thick layer of fat to insulate them from freezing temperatures. Polar bears are excellent swimmers, covering large distances in search of food.</p>
+        </div>
+    </div>
+    <h2></h1>Click <a href="{{ url_for('home') }}">here</a> to make your choice.</h2>  
+</body>
+</html>

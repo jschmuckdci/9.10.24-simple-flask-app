@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Your Bear Choice</title>
+</head>
+<body>
+    <h1>Your Favorite Bear</h1>
+
+    <p>You selected: <strong>{{ bear }}</strong></p>
+
+    <p>Thank you for participating! You can go back to the <a href="{{ url_for('home') }}">home page</a> to choose again.</p>
+</body>
+</html>
